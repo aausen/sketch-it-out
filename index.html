@@ -11,29 +11,36 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <p>Sketch-it-out</p>
-        <div id="myCanvas">
-            <canvas id="paint" width="500" height="250"></canvas>
-        </div>
-
-        <div id="settings"> Colors 
-            <button onclick="getColor('blue')">Blue</button>
-            <button onclick="getColor('red')">Red</button>
-            <button onclick="getColor('pink')">Pink</button>
-            <button onclick="getColor('yellow')">Yellow</button>
-            <button onclick="getColor('orange')">Orange</button>
-            <button onclick="getColor('green')">Green</button>
-            <button onclick="getColor('black')">Black</button>
-            <button onclick="getColor('white')">Eraser</button>
-        </div>
-        <div id="settings"> Brush Size
-            <button onclick="getSize('2')">Small</button>
-            <button onclick="getSize('5')">Medium</button>
-            <button onclick="getSize('10')">Large</button>
-            <button onclick="getSize('20')">XLarge</button>
-        </div>
-        <div id="settings">Start Again?
-            <button onclick="clearAll()">Clear All</button>
+        <h1>Sketch-it-out</h1>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-9">
+                    <div id="myCanvas">
+                        <canvas id="paint" width="500" height="250"></canvas>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div id="color-settings" class="settings"> Colors 
+                        <button onclick="getColor('blue')">Blue</button>
+                        <button onclick="getColor('red')">Red</button>
+                        <button onclick="getColor('pink')">Pink</button>
+                        <button onclick="getColor('yellow')">Yellow</button>
+                        <button onclick="getColor('orange')">Orange</button>
+                        <button onclick="getColor('green')">Green</button>
+                        <button onclick="getColor('black')">Black</button>
+                        <button onclick="getColor('white')">Eraser</button>
+                    </div>
+                    <div id="brush-settings" class="settings"> Brush Size
+                        <button onclick="getSize('2')">Small</button>
+                        <button onclick="getSize('5')">Medium</button>
+                        <button onclick="getSize('10')">Large</button>
+                        <button onclick="getSize('20')">XLarge</button>
+                    </div>
+                    <div id="clear-settings" class="settings d-grid gap-2 col-6 mx-auto">Start Again?
+                        <button class="btn btn-primary" type="button" onclick="clearAll()">Clear All</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script src="index.js"></script>

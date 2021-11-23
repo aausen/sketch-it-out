@@ -9,8 +9,8 @@ function draw(){
         
         const myCanvas = document.getElementById("myCanvas");
         let myCanvas_style = getComputedStyle(myCanvas);
-        canvas.width = 500;
-        canvas.height = 250;
+        canvas.width = 700;
+        canvas.height = 350;
 
         let mouse = {x:0, y:0};
 
