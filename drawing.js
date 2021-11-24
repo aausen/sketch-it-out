@@ -11,6 +11,7 @@ function draw(){
         let myCanvas_style = getComputedStyle(myCanvas);
         canvas.width = 700;
         canvas.height = 350;
+        ctx.fillstyle = "white";
 
         let mouse = {x:0, y:0};
 

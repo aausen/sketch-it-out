@@ -22,16 +22,21 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-header{
-    background-color: crimson;
-}
-
 .icon {
     width: 100px;
-    
+}
+.sm_icon {
+    width: 75px;
 }
 
 .headshot {
     width: 300px;
-    
+}
+.description {
+    outline-style: solid;
+    outline-width: 1px;
+    padding: 1%;
+}
+.about {
+    margin-top: 1%;
 }
