@@ -25,3 +25,13 @@ body{
 header{
     background-color: crimson;
 }
+
+.icon {
+    width: 100px;
+    
+}
+
+.headshot {
+    width: 300px;
+    
+}
