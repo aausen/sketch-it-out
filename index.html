@@ -4,6 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Sketch-it-out</title>
+        <!-- Google font for h1-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet"> 
+        <!--Google font body -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet"> 
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -16,25 +24,29 @@
             <div class="row align-items-center">
                 <div class="col-9">
                     <div id="myCanvas">
-                        <canvas id="paint" width="500" height="250"></canvas>
+                        <canvas id="paint"></canvas>
                     </div>
                 </div>
                 <div class="col-3">
                     <div id="color-settings" class="settings"> Colors 
-                        <button onclick="getColor('blue')">Blue</button>
-                        <button onclick="getColor('red')">Red</button>
-                        <button onclick="getColor('pink')">Pink</button>
-                        <button onclick="getColor('yellow')">Yellow</button>
-                        <button onclick="getColor('orange')">Orange</button>
-                        <button onclick="getColor('green')">Green</button>
-                        <button onclick="getColor('black')">Black</button>
-                        <button onclick="getColor('white')">Eraser</button>
+                        <div>
+                            <button type="button" class="btn btn-primary" onclick="getColor('blue')">Blue</button>
+                            <button type="button" class="btn btn-primary" onclick="getColor('red')">Red</button>
+                            <button type="button" class="btn btn-primary" onclick="getColor('pink')">Pink</button>
+                            <button type="button" class="btn btn-primary" onclick="getColor('yellow')">Yellow</button>
+                            <button type="button" class="btn btn-primary" onclick="getColor('orange')">Orange</button>
+                            <button type="button" class="btn btn-primary" onclick="getColor('green')">Green</button>
+                            <button type="button" class="btn btn-primary" onclick="getColor('black')">Black</button>
+                            <button type="button" class="btn btn-primary" onclick="getColor('white')">Eraser</button>
+                        </div>
                     </div>
                     <div id="brush-settings" class="settings"> Brush Size
-                        <button onclick="getSize('2')">Small</button>
-                        <button onclick="getSize('5')">Medium</button>
-                        <button onclick="getSize('10')">Large</button>
-                        <button onclick="getSize('20')">XLarge</button>
+                        <div>
+                            <button class="btn btn-primary" onclick="getSize('2')">Small</button>
+                            <button class="btn btn-primary" onclick="getSize('5')">Medium</button>
+                            <button class="btn btn-primary" onclick="getSize('10')">Large</button>
+                            <button class="btn btn-primary" onclick="getSize('20')">XLarge</button>
+                        </div>
                     </div>
                     <div id="clear-settings" class="settings d-grid gap-2 col-6 mx-auto">Start Again?
                         <button class="btn btn-primary" type="button" onclick="clearAll()">Clear All</button>

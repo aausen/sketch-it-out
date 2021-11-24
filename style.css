@@ -8,5 +8,16 @@
 .settings {
     display: block;
     text-align: center;
-    
+}
+
+.btn{
+    margin-bottom: 5px;
+}
+
+h1{
+    font-family: 'Cabin Sketch', cursive;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
 }
