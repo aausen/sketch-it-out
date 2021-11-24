@@ -26,7 +26,7 @@ There is an option for an eraser as well as an option to clear all and start ove
 - Get started adding your own features and personal touches.
 - Open the index.html file using your favorite browser.
 
-# Deploying the Game
+# Deploying the Sketch Pad
  
  I used GitHub Pages to deploy this site. 
  - Open the respository 
